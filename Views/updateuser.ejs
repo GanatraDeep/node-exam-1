@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/getuser">View Users</a>
+    <form action="/updateuser" method="post" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="id" value="<%= u._id %>">
+        <input type="text" value="<%= u.name %>" name="name" id="name" placeholder="Enter Name">
+        <br>
+        <input type="email" value="<%= u.email %>" name="email" id="email" placeholder="Enter Email">
+        <br>
+        <input type="password" value="<%= u.password %>" name="password" id="password" placeholder="Enter Passsword">
+        <br>
+        <button>Save</button>
+    </form>
+</body>
+</html>
